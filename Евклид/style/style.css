@@ -651,7 +651,7 @@ p {
 }
 
 .questions__item {
-  padding: 62px 91px 64px 63px;
+  padding: 62px 87px 64px 63px;
   border: 1px solid var(--border-color);
   border-radius: 32px;
   width: calc((100% - var(--gap) * var(--offsets)) / var(--offsets) + 1);
