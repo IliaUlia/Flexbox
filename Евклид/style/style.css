@@ -384,18 +384,19 @@ p {
 }
 
 .about-us__left {
-  justify-content: end;
-  align-items: center;
-  position: relative;
-  margin-right: 19px;
-  padding: 478px 50px 50px 50px;
-  border-radius: 16px;
-  height: 100%;
-  width: 50%;
-  background-image: url(../img/body/body-img-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 26px;
+    padding: 478px 54px 50px 50px;
+    border-radius: 32px;
+    min-height: 70px;
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/body/background-right.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about-us__left::after {
@@ -423,7 +424,7 @@ p {
 }
 
 .about-us__left p {
-  margin-right: 154px;
+  margin-right: 160px;
   max-width: 440px;
 }
 
@@ -436,7 +437,7 @@ p {
   font-size: 16px;
   line-height: 22px;
   min-height: 60px;
-  min-width: 110px;
+  min-width: 175px;
   color: var(--link-color);
   transition: background-color .3s ease-in-out, border .3s ease-in-out;
   z-index: 10;
@@ -463,23 +464,23 @@ p {
 }
 
 .about-us__block {
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 32px;
   position: relative;
   padding: 65px 120px 63px 143px;
   border: 1px solid var(--border-color);
   border-radius: 32px;
+  background-image: url(../img/body/package.jpg);
+  background-position: 60px center;
+  background-repeat: no-repeat;
   color: var(--text-color);
 }
 
 .about-us__block-2 {
   margin-bottom: 0;
-}
-
-.about-us__img {
-  max-height: 132px;
-  width: 119px;
-  margin-right: 50px;
+  background-image: url(../img/body/cogwheel.jpg);
+  background-position: 60px center;
+  background-repeat: no-repeat;
 }
 
 .about-us__block-text {
@@ -651,10 +652,10 @@ p {
 }
 
 .questions__item {
-  padding: 62px 87px 64px 63px;
-  border: 1px solid var(--border-color);
+  padding: 64px 93px 64px 59px;
+  outline: 1px solid var(--border-color);
   border-radius: 32px;
-  width: calc((100% - var(--gap) * var(--offsets)) / var(--offsets) + 1);
+  width: calc((100% - var(--gap)* var(--offsets)) / var(--offsets) + 1);
 }
 
 .questions__item h3 {
@@ -666,21 +667,21 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  max-width: 400px;
+  max-width: 410px;
   color: var(--text-color);
 }
 
 /*---------- footer -----------------------*/
 .footer {
   justify-content: space-between;
-  padding: 49px 73px;
+  padding: 50px 75px;
   background-color: var(--footer-color);
 }
 
 .footer__left {
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 349px;
+  padding-right: 349px;
   outline: none;
   min-width: 252px;
 }
@@ -786,12 +787,12 @@ p {
 
 .footer__center {
   flex-direction: column;
-  margin-right: 236px;
-  width: 570px;
+  padding-right: 236px;
 }
 
 .footer__title {
   margin-bottom: 7px;
+  width: 100%;
   color: var(--footer-text);
 }
 
@@ -848,6 +849,7 @@ p {
   padding: 14px 0 0px 24px;
   border: none;
   border-radius: 16px;
+  resize: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -875,7 +877,7 @@ p {
 
 .footer__agree-button {
   margin-right: 21px;
-  padding: 19px 52px;
+  padding: 21px 52px;
   outline: none;
   font-weight: 700;
   font-size: 16px;
@@ -959,10 +961,6 @@ p {
 .footer__custom-input:focus + .footer__text-custom {
   outline: 2px solid var(--text-descr);
   outline-offset: 5px;
-}
-
-.footer__agree-button {
-  mr
 }
 
 .footer__right {

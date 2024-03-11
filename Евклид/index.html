@@ -22,22 +22,22 @@
           <nav class="nav">
             <ul class="header__nav-list flex">
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">
+                <a href="#about" class="header__nav-link">
                   О&nbsp;нас
                 </a>
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">
+                <a href="#stage" class="header__nav-link">
                   Этапы
                 </a>
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">
+                <a href="#question" class="header__nav-link">
                   Вопросы
                 </a>
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">
+                <a href="#form" class="header__nav-link">
                   Оставить заявку
                 </a>
               </li>
@@ -51,7 +51,6 @@
               </svg>
               
           </a>
-
         </div>
 
       <div class="container header__bottom flex">
@@ -72,7 +71,7 @@
     <h1 class="title">
       Евклид
     </h1>
-    <section class="container about">
+    <section id="about" class="container about">
       <div class="about-us flex">
         <div class="about-us__top flex">
           <h2 class="about-us__title h2-title">
@@ -101,8 +100,6 @@
           </div>
           <div class="about-us__right flex">
             <div class="about-us__block about-us__block-1 flex">
-              <img src="img/body/package.jpg" alt="коробка" class="about-us__img">
-              <span></span>
               <div class="about-us__descr">
                 <h3 class="about-us__title h3-title">
                   Консультация с&nbsp;широким активом
@@ -114,8 +111,6 @@
               </div>
             </div>
             <div class="about-us__block about-us__block-2 flex">
-              <img src="img/body/cogwheel.jpg" alt="коробка" class="about-us__img">
-              <span class="cogwheel"></span>
               <div class="about-us__descr about-us__descr-bottom">
                 <h3 class="about-us__title h3-title">
                   В&nbsp;своём стремлении повысить
@@ -131,7 +126,7 @@
       </div>
     </section>
 
-    <section class="container stage">
+    <section id="stage" class="container stage">
       <div class="stages flex">
         <h2 class="stages__title h2-title">
           Этапы
@@ -162,7 +157,7 @@
       </div>
     </section>
 
-    <section class="container question">
+    <section id="question" class="container question">
       <div class="questions flex">
         <h2 class="questions__title h2-title">
           Вопросы
@@ -274,7 +269,7 @@
           <legend class="footer__legend">
             Оставить заявку
           </legend>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="post" name="form">
+          <form id="form" action="https://jsonplaceholder.typicode.com/posts" method="post" name="form">
             <ul class="footer__list">
               <li class="footer__item">
                 <input class="footer__input" name="name" type="text" placeholder="Фамилия, имя и отчество*" required>
