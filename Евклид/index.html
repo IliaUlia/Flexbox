@@ -8,42 +8,42 @@
   <link rel="stylesheet" href=".editorconfig">
   <link rel="stylesheet" href="style/normalaize.css">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
   <link rel="stylesheet" href="fonts/stylesheet">
   <link rel="stylesheet" href="favicon.jpg">
 </head>
 
 <body>
-  <header>
-    <div class="header flex">
-      <div class="header__top flex">
-          <a href="#" class="header__link">
+  <header class="header">
+      <div class="container header__top flex">
+          <a href="#" class="header__link" aria-label="лого">
             <img class="header__logo-img" src="img/header/logo.jpg" alt="Евклид">
           </a>
-          <nav class="nav">
+          <nav class="nav" aria-label="меню навигации">
             <ul class="header__nav-list flex">
               <li class="header__nav-item">
-                <a href="#about" class="header__nav-link">
+                <a href="#about" class="header__nav-link" aria-label="о нас">
                   О&nbsp;нас
                 </a>
               </li>
               <li class="header__nav-item">
-                <a href="#stage" class="header__nav-link">
+                <a href="#stage" class="header__nav-link" aria-label="Этапы">
                   Этапы
                 </a>
               </li>
               <li class="header__nav-item">
-                <a href="#question" class="header__nav-link">
+                <a href="#question" class="header__nav-link" aria-label="Вопросы">
                   Вопросы
                 </a>
               </li>
               <li class="header__nav-item">
-                <a href="#form" class="header__nav-link">
+                <a href="#form" class="header__nav-link" aria-label="Оставить заявку">
                   Оставить заявку
                 </a>
               </li>
             </ul>
           </nav>
-          <a href="#" class="header__search-link">
+          <a href="#" class="header__search-link" aria-label="найти">
             <img src="img/header/search.jpg" alt="поиск" class="header__search-img">
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.5784)" />
@@ -52,8 +52,10 @@
               
           </a>
         </div>
-
-      <div class="container header__bottom flex">
+</header>
+ <main class="main">
+  <section class="container">
+      <div class="header__bottom flex">
         <h2 class="header__title">
           Проектные решения любой сложности
         </h2>
@@ -61,13 +63,12 @@
           Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом
           проектантов
         </p>
-        <button class="btn header__button">
+        <button class="btn header__button" aria-label="Заказать расчет">
           Заказать расчёт
         </button>
       </div>
-    </div>
-  </header>
-  <main class="main">
+  </section>
+ 
     <h1 class="title">
       Евклид
     </h1>
@@ -90,14 +91,19 @@
         </div>
         <div class="about-us__bottom flex">
           <div class="about-us__left flex">
+
+            <div class="flex about-us__cont-left">
+              <div class="flex about-us__cont-descr">
             <p class="about-us__descr">
               Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
               и&nbsp;реализации новых принципов
             </p>
-            <a href="#" class="about-us__link">
+            <button class="about-us__link" aria-label="подробнее">
               Подробнее
-            </a>
+            </button>
           </div>
+          </div>
+        </div>
           <div class="about-us__right flex">
             <div class="about-us__block about-us__block-1 flex">
               <div class="about-us__descr">
@@ -122,7 +128,7 @@
               </div>
             </div>
           </div>
-        </div>
+      </div>
       </div>
     </section>
 
@@ -147,10 +153,10 @@
           </p>
         </div>
         <div class="stages__button flex">
-          <button class="btn stages__link">
+          <button class="btn stages__link" aria-label="подробнее">
             Подробнее
           </button>
-          <button class="btn stages__button">
+          <button class="btn stages__button" aria-label="договор">
             Договор
           </button>
         </div>
@@ -195,55 +201,55 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer flex">
+  <footer class="footer">
+    <div class="container footer__container flex">
       <div class="footer__left flex">
         
-          <a href="#" class="footer__logo">
+          <a href="#" class="footer__logo" aria-label="лого">
             <img src="img/footer/logo-footer.png" alt="Евклид" class="footer__logo-img">
           </a>
         
         <nav class="footer__nav">
           <ul class="footer__nav-list flex">
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="о нас">
                 О&nbsp;нас
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="проекты">
                 Проекты
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="отзывы">
                 Отзывы
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="договор оферты">
                 Договор оферты
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="договор подряда">
                 Договор подряда
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="Конфиденциальность">
                 Конфиденциальность
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
+              <a href="#" class="footer__nav-link" aria-label="партнерское соглашение">
                 Партнёрское соглашение
               </a>
             </li>
           </ul>
         </nav>
         <div class="footer__social flex">
-          <a href="#" class="footer__social-link social-ok">
+          <a href="#" class="footer__social-link social-ok" aria-label="одноклассники">
             <img src="img/footer/social-ok.png" alt="Одноклассники" class="footer__social-img">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -252,7 +258,7 @@
                 d="M30 60C46.5686 60 60 46.5685 60 30C60 13.4315 46.5686 0 30 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 30 60ZM19.35 19.9811C19.35 13.9978 24.2004 9.14729 30.1838 9.14729C36.1673 9.14729 41.0176 13.9978 41.0176 19.9811C41.0176 25.9645 36.1673 30.8154 30.1838 30.8154C24.2004 30.8154 19.35 25.9645 19.35 19.9811ZM41.0823 36.3881C40.9448 36.4983 38.3457 38.5522 34.0085 39.4358L40.5554 45.9243C41.7067 47.0738 41.7081 48.9389 40.5586 50.0902C39.4091 51.2414 37.5444 51.2432 36.3927 50.0935L30.0368 43.904L24.2639 50.0536C23.6859 50.6532 22.9149 50.9547 22.1431 50.9547C21.407 50.9547 20.6703 50.6808 20.0986 50.1296C18.9274 49.0003 18.8935 47.1355 20.0228 45.9643L26.2369 39.4701C21.7782 38.6073 19.0718 36.4998 18.9324 36.3881C17.6633 35.3702 17.4594 33.5163 18.4772 32.247C19.4949 30.9778 21.3487 30.7739 22.6182 31.7916C22.645 31.8133 25.4756 33.9398 30.0366 33.9429C34.5977 33.9398 37.3698 31.8133 37.3966 31.7916C38.666 30.7739 40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z" />
             </svg>
           </a>
-          <a href="#" class="footer__social-link social-vk">
+          <a href="#" class="footer__social-link social-vk" aria-label="в контакте">
             <img src="img/footer/social-vk.png" alt="В контакте" class="footer__social-img">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -272,17 +278,32 @@
           <form id="form" action="https://jsonplaceholder.typicode.com/posts" method="post" name="form">
             <ul class="footer__list">
               <li class="footer__item">
+                <label>
+                  <span class="visually-hidden">
+                    введите фамилию, имя, отчество
+                  </span>
                 <input class="footer__input" name="name" type="text" placeholder="Фамилия, имя и отчество*" required>
+              </label>
               </li>
               <li class="footer__item">
+                <label>
+                  <span class="visually-hidden">
+                    введите емайл
+                  </span>
                 <input class="footer__input" name="Email" type="text" placeholder="Email*" required>
+                </label>
               </li>         
               <li class="footer__item">
+                <label>
+                  <span class="visually-hidden">
+                    введите сообщение
+                  </span>
                 <textarea class="footer__textarea" name="message" id="textarea" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                </label>
               </li>
             </ul>
               <div class="footer__agree flex">
-                <button class="btn footer__agree-button" type="submit">
+                <button class="btn footer__agree-button" type="submit" aria-label="отправить данные">
                   Отправить данные
                 </button>
                 <div class="footer__checkbox">
